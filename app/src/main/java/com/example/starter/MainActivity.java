@@ -2,11 +2,14 @@ package com.example.starter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.icu.text.NumberFormat;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private TextView saidaCalculo;
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public void soma(View view){
         Double numberNumero1 = Double.parseDouble(numero1.getText().toString());
         Double numberNumero2 = Double.parseDouble(numero2.getText().toString());
-        saidaCalculo.setText(numberNumero1.toString());
+        Double numberSaida = numberNumero1 + numberNumero2;
+        saidaCalculo.setText((numberSaida.toString()));
     }
 }
