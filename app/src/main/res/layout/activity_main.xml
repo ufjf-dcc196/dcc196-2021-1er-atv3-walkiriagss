@@ -88,7 +88,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="16dp"
         android:width="30sp"
-        android:onClick="soma"
+        android:onClick="divisao"
         android:text="/"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"

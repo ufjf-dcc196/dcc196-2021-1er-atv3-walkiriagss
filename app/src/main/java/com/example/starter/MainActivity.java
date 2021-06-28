@@ -66,6 +66,23 @@ public class MainActivity extends AppCompatActivity {
         }catch (Exception e){
             saidaCalculo.setText("Digite os dois números");
         }
+    }
 
+    public void divisao(View view){
+        Double numberNumero1 = 0.0;
+        Double numberNumero2 = 0.0;
+        try {
+            numberNumero1 = Double.parseDouble(numero1.getText().toString());
+            numberNumero2 = Double.parseDouble(numero2.getText().toString());
+            if(numberNumero2 == 0.0){
+                saidaCalculo.setText("Denominador inválido");
+            }
+            else {
+                Double numberSaida = numberNumero1 / numberNumero2;
+                saidaCalculo.setText((numberNumero1 + " / " + numberNumero2 + " = " + numberSaida.toString()));
+            }
+        }catch (Exception e){
+            saidaCalculo.setText("Digite os dois números");
+        }
     }
 }
