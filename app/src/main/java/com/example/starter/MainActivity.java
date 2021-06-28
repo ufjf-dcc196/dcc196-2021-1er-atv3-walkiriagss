@@ -19,14 +19,11 @@ public class MainActivity extends AppCompatActivity {
         //código
         saida = findViewById(R.id.saida); //
         saida.setText("Bem vinda!");
-
+        nome = findViewById(R.id.editTextNome);
+        starter = findViewById(R.id.editTextStarter);
     }
 
     public void clickBotao(View view){
-
-        //Capturamos os componentes pelos ids
-        nome = findViewById(R.id.editTextNome);
-        starter = findViewById(R.id.editTextStarter);
 
         //Convertemos e operamos os dados
         String nomestr = nome.getText().toString();
