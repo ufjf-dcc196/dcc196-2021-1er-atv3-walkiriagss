@@ -22,9 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickBotao(View view){
         TextView saida = findViewById(R.id.saida); //
-        saida.setText("Botão clicado!");
-
         EditText nome = findViewById(R.id.editTextNome);
         EditText starter = findViewById(R.id.editTextStarter);
+        
+        saida.setText(
+                nome.getText().toString()
+                        +starter.getText().toString());
     }
 }
