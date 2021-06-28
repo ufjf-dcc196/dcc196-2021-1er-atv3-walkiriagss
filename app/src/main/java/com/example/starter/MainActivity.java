@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView saida;
+    private TextView saidaCalculo;
     private EditText numero1;
     private EditText numero2;
     private Button botaoSoma;
@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //código
-        saida = findViewById(R.id.saida); //
-        saida.setText("Calculadora!");
+        saidaCalculo = findViewById(R.id.saida); //
         numero1 = findViewById(R.id.editTextNumber1);
         numero2 = findViewById(R.id.editTextNumber2);
         botaoSoma = findViewById(R.id.buttonSoma);
@@ -28,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void soma(View view){
         Double numberNumero1 = Double.parseDouble(numero1.getText().toString());
-        Double numberNumero2 = Double.parseDouble(numero2.getText().toString());    }
-
+        Double numberNumero2 = Double.parseDouble(numero2.getText().toString());
+        saidaCalculo.setText(numberNumero1.toString());
+    }
 }
