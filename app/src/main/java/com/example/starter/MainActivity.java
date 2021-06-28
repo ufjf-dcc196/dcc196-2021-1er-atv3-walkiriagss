@@ -21,15 +21,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickBotao(View view){
+
+        //Capturamos os componentes pelos ids
         TextView saida = findViewById(R.id.saida); //
         EditText nome = findViewById(R.id.editTextNome);
         EditText starter = findViewById(R.id.editTextStarter);
 
+        //Convertemos e operamos os dados
         String nomestr = nome.getText().toString();
-        String Starterstr = starter.getText().toString();
+        String starterstr = starter.getText().toString();
 
-        saida.setText(
-                nome.getText().toString()
-                        +starter.getText().toString());
+        //Apresentamos a saída em outros componentes
+        saida.setText(String.format("Olá treinador %s! Seu pokemon escolhido foi %s!",
+                nomestr, starterstr));
     }
 }
