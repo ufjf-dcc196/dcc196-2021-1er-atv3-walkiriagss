@@ -10,12 +10,11 @@
         android:id="@+id/saida"
         android:layout_width="345dp"
         android:layout_height="108dp"
-        android:layout_marginTop="16dp"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/buttonSoma"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSoma" />
+        tools:layout_editor_absoluteY="422dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -42,15 +41,56 @@
 
     <Button
         android:id="@+id/buttonSoma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="69dp"
+        android:layout_height="52dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:width="30sp"
         android:onClick="soma"
-        android:text="Soma"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSubtracao"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/buttonMultiplicacao"
+        android:layout_width="69dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:width="30sp"
+        android:onClick="soma"
+        android:text="x"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDivisao"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/buttonSubtracao"
+        android:layout_width="69dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:width="30sp"
+        android:onClick="soma"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMultiplicacao"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/buttonDivisao"
+        android:layout_width="69dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:width="30sp"
+        android:onClick="soma"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
     <EditText
