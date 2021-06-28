@@ -24,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
         TextView saida = findViewById(R.id.saida); //
         EditText nome = findViewById(R.id.editTextNome);
         EditText starter = findViewById(R.id.editTextStarter);
-        
+
+        String nomestr = nome.getText().toString();
+        String Starterstr = starter.getText().toString();
+
         saida.setText(
                 nome.getText().toString()
                         +starter.getText().toString());
