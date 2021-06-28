@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         //código
         saidaCalculo = findViewById(R.id.saida);
-        saidaCalculo.setText("Cálculo = 0,00");
+        saidaCalculo.setText("Calculadora");
         numero1 = findViewById(R.id.editTextNumber1);
         numero2 = findViewById(R.id.editTextNumber2);
         botaoSoma = findViewById(R.id.buttonSoma);
@@ -36,10 +36,24 @@ public class MainActivity extends AppCompatActivity {
             numberNumero1 = Double.parseDouble(numero1.getText().toString());
             numberNumero2 = Double.parseDouble(numero2.getText().toString());
             Double numberSaida = numberNumero1 + numberNumero2;
-            saidaCalculo.setText(("Cálculo = " + numberSaida.toString()));
+            saidaCalculo.setText((numberNumero1 + " + "+ numberNumero2 + " = " + numberSaida.toString()));
         }catch (Exception e){
             saidaCalculo.setText("Digite os dois números");
         }
 
+    }
+
+    public void subtração(View view){
+        Double numberNumero1 = 0.0;
+        Double numberNumero2 = 0.0;
+        try {
+            numberNumero1 = Double.parseDouble(numero1.getText().toString());
+            numberNumero2 = Double.parseDouble(numero2.getText().toString());
+            Double numberSaida = numberNumero1 - numberNumero2;
+            saidaCalculo.setText((numberNumero1 + " - "+ numberNumero2 + " = " + numberSaida.toString()));
+        }catch (Exception e){
+            saidaCalculo.setText("Digite os dois números");
         }
+
+    }
 }
