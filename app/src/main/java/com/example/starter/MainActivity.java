@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,5 +24,7 @@ public class MainActivity extends AppCompatActivity {
         TextView saida = findViewById(R.id.saida); //
         saida.setText("Botão clicado!");
 
+        EditText nome = findViewById(R.id.editTextNome);
+        EditText starter = findViewById(R.id.editTextStarter);
     }
 }
