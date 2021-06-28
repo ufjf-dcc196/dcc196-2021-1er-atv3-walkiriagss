@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             numberNumero1 = Double.parseDouble(numero1.getText().toString());
             numberNumero2 = Double.parseDouble(numero2.getText().toString());
             Double numberSaida = numberNumero1 + numberNumero2;
-            saidaCalculo.setText((numberNumero1 + " + "+ numberNumero2 + " = " + numberSaida.toString()));
+            saidaCalculo.setText(("Resultado: " +numberNumero1 + " + "+ numberNumero2 + " = " + numberSaida.toString()));
         }catch (Exception e){
             saidaCalculo.setText("Digite os dois números");
         }
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             numberNumero1 = Double.parseDouble(numero1.getText().toString());
             numberNumero2 = Double.parseDouble(numero2.getText().toString());
             Double numberSaida = numberNumero1 - numberNumero2;
-            saidaCalculo.setText((numberNumero1 + " - "+ numberNumero2 + " = " + numberSaida.toString()));
+            saidaCalculo.setText(("Resultado: " +numberNumero1 + " - "+ numberNumero2 + " = " + numberSaida.toString()));
         }catch (Exception e){
             saidaCalculo.setText("Digite os dois números");
         }
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             numberNumero1 = Double.parseDouble(numero1.getText().toString());
             numberNumero2 = Double.parseDouble(numero2.getText().toString());
             Double numberSaida = numberNumero1 * numberNumero2;
-            saidaCalculo.setText((numberNumero1 + " x "+ numberNumero2 + " = " + numberSaida.toString()));
+            saidaCalculo.setText(("Resultado: " +numberNumero1 + " x "+ numberNumero2 + " = " + numberSaida.toString()));
         }catch (Exception e){
             saidaCalculo.setText("Digite os dois números");
         }
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else {
                 Double numberSaida = numberNumero1 / numberNumero2;
-                saidaCalculo.setText((numberNumero1 + " / " + numberNumero2 + " = " + numberSaida.toString()));
+                saidaCalculo.setText(("Resultado: " + numberNumero1 + " / " + numberNumero2 + " = " + numberSaida.toString()));
             }
         }catch (Exception e){
             saidaCalculo.setText("Digite os dois números");
