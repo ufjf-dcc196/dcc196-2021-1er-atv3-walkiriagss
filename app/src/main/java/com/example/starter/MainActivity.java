@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         saida.setText("Bem vinda!");
         nome = findViewById(R.id.editTextNumber1);
         starter = findViewById(R.id.editTextNumber2);
-        botao = findViewById(R.id.button);
+        botao = findViewById(R.id.buttonSoma);
 
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
