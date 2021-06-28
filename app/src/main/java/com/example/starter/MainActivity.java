@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView saida;
-    private EditText nome;
-    private EditText starter;
-    private Button botao;
+    private EditText numero1;
+    private EditText numero2;
+    private Button botaoSoma;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,17 +20,17 @@ public class MainActivity extends AppCompatActivity {
 
         //código
         saida = findViewById(R.id.saida); //
-        saida.setText("Bem vinda!");
-        nome = findViewById(R.id.editTextNumber1);
-        starter = findViewById(R.id.editTextNumber2);
-        botao = findViewById(R.id.buttonSoma);
+        saida.setText("Calculadora!");
+        numero1 = findViewById(R.id.editTextNumber1);
+        numero2 = findViewById(R.id.editTextNumber2);
+        botaoSoma = findViewById(R.id.buttonSoma);
 
-        botao.setOnClickListener(new View.OnClickListener() {
+        botaoSoma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Convertemos e operamos os dados
-                String nomestr = nome.getText().toString();
-                String starterstr = starter.getText().toString();
+                String nomestr = numero1.getText().toString();
+                String starterstr = numero2.getText().toString();
 
                 //Apresentamos a saída em outros componentes
                 saida.setText(String.format("Olá treinador %s! Seu pokemon escolhido foi %s!",
