@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         //código
         saida = findViewById(R.id.saida); //
         saida.setText("Bem vinda!");
-        nome = findViewById(R.id.editTextNome);
-        starter = findViewById(R.id.editTextStarter);
+        nome = findViewById(R.id.editTextNumber1);
+        starter = findViewById(R.id.editTextNumber2);
         botao = findViewById(R.id.button);
 
         botao.setOnClickListener(new View.OnClickListener() {
@@ -38,5 +38,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    
+
 }
