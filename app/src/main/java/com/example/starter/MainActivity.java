@@ -8,14 +8,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    private TextView saida;
+    private EditText nome;
+    private EditText starter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //código
-        TextView saida = findViewById(R.id.saida); //
+        saida = findViewById(R.id.saida); //
         saida.setText("Bem vinda!");
 
     }
@@ -23,9 +25,8 @@ public class MainActivity extends AppCompatActivity {
     public void clickBotao(View view){
 
         //Capturamos os componentes pelos ids
-        TextView saida = findViewById(R.id.saida); //
-        EditText nome = findViewById(R.id.editTextNome);
-        EditText starter = findViewById(R.id.editTextStarter);
+        nome = findViewById(R.id.editTextNome);
+        starter = findViewById(R.id.editTextStarter);
 
         //Convertemos e operamos os dados
         String nomestr = nome.getText().toString();
