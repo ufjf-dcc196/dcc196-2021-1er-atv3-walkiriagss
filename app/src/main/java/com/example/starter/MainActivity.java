@@ -24,19 +24,10 @@ public class MainActivity extends AppCompatActivity {
         numero1 = findViewById(R.id.editTextNumber1);
         numero2 = findViewById(R.id.editTextNumber2);
         botaoSoma = findViewById(R.id.buttonSoma);
-
-        botaoSoma.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Convertemos e operamos os dados
-                String nomestr = numero1.getText().toString();
-                String starterstr = numero2.getText().toString();
-
-                //Apresentamos a saída em outros componentes
-                saida.setText(String.format("Olá treinador %s! Seu pokemon escolhido foi %s!",
-                        nomestr, starterstr));
-            }
-        });
     }
+
+    public void soma(View view){
+        Double numberNumero1 = Double.parseDouble(numero1.getText().toString());
+        Double numberNumero2 = Double.parseDouble(numero2.getText().toString());    }
 
 }
