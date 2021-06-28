@@ -3,6 +3,7 @@ package com.example.starter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,12 @@ public class MainActivity extends AppCompatActivity {
         //código
         TextView saida = findViewById(R.id.saida); //
         saida.setText("Bem vinda!");
+
+    }
+
+    public void clickBotao(View view){
+        TextView saida = findViewById(R.id.saida); //
+        saida.setText("Botão clicado!");
 
     }
 }
